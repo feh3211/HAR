@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Fredoka:wght@300;400&display=swap");
+body {
+  background-color: #141313;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: #141313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 6rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: -7rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+  letter-spacing: 7px;
+}
+
+.ajuda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 1.1rem;
+  width: 50rem;
+  border: none;
+}
+input {
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 1.1rem;
+  width: 18rem;
+  height: 2rem;
+  border: none;
+  text-align: center;
+}
+
+input,
+textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #d9d9d9;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  border: none;
+  text-decoration: none;
+}
+
+button {
+  background-color: #e11456;
+  font-family: "Poppins", sans-serif;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  width: 14rem;
+  height: 3.7rem;
+  font-weight: 900;
+  font-size: 1rem;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+button:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+@media only screen and (max-width: 480px) {
+  img {
+    width: 20rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: -5rem;
+    padding: 1rem;
+  }
+  input,
+  textarea {
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 1.1rem;
+    width: 17rem;
+    border: none;
+  }
+}
+
+/* Adaptações para tablets */
+@media only screen and (min-width: 482px) and (max-width: 768px) {
+  h2 {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: -5rem;
+    padding: 1rem;
+  }
+  input,
+  textarea {
+    border-radius: 2rem;
+    margin-bottom: 0.5rem;
+    padding: 1.1rem;
+    width: 30rem;
+    border: none;
+  }
+}

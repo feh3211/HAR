@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+  background-color: #141313;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-align: center; /* Centraliza o conteúdo na horizontal */
+  display: flex;
+  align-items: center; /* Centraliza na vertical */
+  justify-content: center; /* Centraliza na horizontal */
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #141313;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: 12rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  color: #d9d9d9;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+}
+
+
+.pag {
+  background-color: #e11456;
+  color: #141313;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 1.7rem;
+  text-align: center;
+  height: 1.4rem;
+  width: 5rem;
+  transition: transform 0.3s ease;
+}
+.pag:hover{ 
+  color: #d9d9d9;
+  transform: scale(1.1);
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 15px 30px;
+}
+
+.pay-btn {
+  background-color: #e11456;
+  color: #141313;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 1.7rem;
+  height: 3rem;
+  width: 25rem;
+  transition: transform 0.3s ease;
+}
+
+.pay-btn:hover {
+  color: #d9d9d9;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 80%;
+    margin-top: 4rem;
+  }
+  .pay-btn {
+    width: 14rem;
+  }
+
+  .payment-methods {
+    margin-bottom: 20px;
+    gap: 10px; 
+  }
+  }
+
+/* Adaptações para tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin-top: 5rem;
+  }
+}
